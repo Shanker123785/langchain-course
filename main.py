@@ -33,6 +33,7 @@ def main():
     chain=summary_prompt_template | llm
 
     response=chain.invoke(input={"information": information})
+    print(response.content)
 
 if __name__ == "__main__":
     main()
